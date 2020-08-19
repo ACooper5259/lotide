@@ -17,8 +17,8 @@ const eqArrays = function (array1, array2) {
   }  
 }
 
-const assertEqual = function(array1, array2) {
+const assertArrayEqual = function(array1, array2) {
   eqArrays(array1, array2) ? console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`) : console.log(`❌❌❌ Assertion Failed: ${array1} !== ${array2}`);
 };
 
-assertEqual([[1, 2],"labs"], [[1, 2],"labs"])
+assertEqual([1,"labs"], [1,"labs"])
