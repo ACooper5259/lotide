@@ -3,17 +3,21 @@ const assertEqual = function(actual, expected) {
 };
 
 const eqArrays = function (array1, array2) {
-  let finalArray = []
-  for (let x = 0; x < array1.length; x++) {
-    if (array1[x] === array2[x]){
-      finalArray.push(array1[x])
-    }
-  }
-  
-  if (finalArray.length === array1.length){
-    return true;
+  if (array1.length !== array2.length){
+    return false;
   } else {
-    return false
+    let finalArray = []
+    for (let x = 0; x < array1.length; x++) {
+      if (array1[x] === array2[x]){
+        finalArray.push(array1[x])
+      }
+    }
+  
+    if (finalArray.length === array1.length){
+      return true;
+    } else {
+      return false
+    }
   }  
 }
 
