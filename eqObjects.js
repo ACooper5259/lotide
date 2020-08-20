@@ -11,13 +11,39 @@ const eqObjects = function(object1, object2) {
     return false;
   } else {
     for (let element of object1Keys) {
-      if (!(object1[element] === object2[element])){
-        return false
+      if (Array.isArray(object1[element])){
+        return eqArrays(object1[element],object2[element])
+      }
+      else {
+        if (!(object1[element] === object2[element])){
+          return false
+        }
       }
     }
     return true
   }
 };
+
+const eqArrays = function (array1, array2) {
+  if (array1.length !== array2.length){
+    return false;
+  } else {
+    let finalArray = []
+    for (let x = 0; x < array1.length; x++) {
+      if (array1[x] === array2[x]){
+        finalArray.push(array1[x])
+      }
+    }
+  
+    if (finalArray.length === array1.length){
+      return true;
+    } else {
+      return false
+    }
+  }  
+}
+
+
 
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
