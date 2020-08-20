@@ -2,23 +2,23 @@ const assertEqual = function(actual, expected) {
   actual === expected ? console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`) : console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
 };
 
-const findKeyByValue = function (object, value) {
-  for (let element in object){
-    let title = object[element]
-    if (title === value){
-      return element
+const findKeyByValue = function(object, value) {
+  for (let element in object) {
+    let title = object[element];
+    if (title === value) {
+      return element;
     } 
   }
-}
+};
 
 
-const bestTVShowsByGenre = { 
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
 };
 
-const bestPetNames = { 
+const bestPetNames = {
   dog: "Rover",
   cat: " Simba",
   goat:  "Billy"

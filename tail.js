@@ -3,9 +3,9 @@ const assertEqual = function(actual, expected) {
   actual === expected ? console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`) : console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
 };
 
-const tail = function(array){
-  return array.slice(1)
-}
+const tail = function(array) {
+  return array.slice(1);
+};
 
 //Test Case 1: Check the returned array elements
 const result = tail(["Hello", "Lighthouse", "Labs"]);

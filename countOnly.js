@@ -5,19 +5,19 @@ const assertEqual = function(actual, expected) {
 //all items: an array of strings to look through
 //items to count: an object of keys with values true if to be counted and false otherwise
 const countOnly = function(allItems, itemsToCount) {
-  const result = {}
+  const result = {};
   
   for (const item of allItems) {
-    if (itemsToCount[item]){
-      if (result[item]){
-        result[item] += 1
+    if (itemsToCount[item]) {
+      if (result[item]) {
+        result[item] += 1;
       } else {
-        result[item] = 1
+        result[item] = 1;
       }
     }
   }
   return result;
-}
+};
 
 const firstNames = [
   "Karl",
