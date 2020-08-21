@@ -3,16 +3,12 @@ const assertEqual = function(actual, expected) {
 };
 
 const findKey = function(object, callback) {
-  for (key in object) {
+  for (let key in object) {
     if (callback(object[key])) {
       return key;
-    } 
+    }
   }
-}
-
-assertEqual
-
-
+};
 
 assertEqual(findKey({
   "Blue Hill": { stars: 1 },
