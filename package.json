@@ -1,0 +1,33 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "my lodash-light personal package",
+  "main": "assertArrayEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ACooper5259/lotide.git"
+  },
+  "keywords": [
+    "assert",
+    "equal",
+    "tail",
+    "head",
+    "middle"
+  ],
+  "author": "Audrey Cooper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ACooper5259/lotide/issues"
+  },
+  "homepage": "https://github.com/ACooper5259/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1"
+  }
+}
