@@ -1,23 +1,4 @@
-const eqArrays = require("./eqArrays");
-
-const eqObjects = function (object1, object2) {
-  let object1Keys = Object.keys(object1);
-  let object2Keys = Object.keys(object2);
-  if (object2Keys.length !== object1Keys.length) {
-    return false;
-  } else {
-    for (let element of object1Keys) {
-      if (Array.isArray(object1[element])) {
-        return eqArrays(object1[element], object2[element]);
-      } else {
-        if (!(object1[element] === object2[element])) {
-          return false;
-        }
-      }
-    }
-    return true;
-  }
-};
+const eqObjects = require("./eqObjects");
 
 const assertObjectEqual = function (object1, object2) {
   const inspect = require("util").inspect;
