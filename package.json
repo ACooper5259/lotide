@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@acooper5259/lotide",
   "version": "1.0.0",
   "description": "my lodash-light personal package",
   "main": "assertArrayEqual.js",
@@ -20,7 +20,7 @@
     "head",
     "middle"
   ],
-  "author": "@acooper5259",
+  "author": "Audrey Cooper <audrey_cooper@me.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ACooper5259/lotide/issues"
